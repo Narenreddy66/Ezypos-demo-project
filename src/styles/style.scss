@@ -1,0 +1,57 @@
+:root{
+    --background: #f8f8f8;
+    --button-color: #fde7d7;
+    --activebtncolor1: #e23744;
+    --normal-color: white;
+    --sidebackground:lightgrey;
+    --thcolor:lightgrey;
+}
+.v-btn{
+    background-color: var(--activebtncolor1) !important;
+    color: white !important;
+}
+*{
+    background-color: var(--background);
+    margin: 0;
+}
+.bg-color1{
+    background-color: lightblue;
+    height: 100vh;
+}
+.bg-color{
+    background-color: var( --sidebackground);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: var(--activebtncolor1);
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+.nav-pills .nav-link {
+    background: 0 0;
+    border: 0;
+    border-radius: 0.25rem;
+    padding: 10px 50px 10px 50px;
+    margin-top: 8px;
+}
+th{
+    background-color:lightcyan !important;
+    color: black;
+}
+.nav{
+      background-color:var(--thcolor) !important;
+      height: 100vh;
+      margin-top: 1px;
+}
+.container-fluid{
+    background-color:var(--thcolor) !important;
+
+}
+.collapse{
+    background-color:var(--thcolor) !important;
+
+}
+.navbar{
+    background-color:var(--thcolor) !important;
+
+}
