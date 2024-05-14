@@ -24,6 +24,7 @@ router.beforeEach(async (to, from, next) => {
     console.log(from);
 
     if (to.matched.some((record) => !record.meta.isLoginPage)) {
+        
 
         if (!isAuthenticated()) {
             next({ name: 'LoginPage' });

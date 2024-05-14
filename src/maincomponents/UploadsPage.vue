@@ -23,12 +23,7 @@
                     <v-text-field type="date" density="compact" variant="solo"></v-text-field>
                 </div>
                 <div class="col-2">
-                    <!-- <select class="form-select" aria-label="Default select example">
-          <option selected>Open this select menu</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select> -->
+                 
                     <v-select label="Status"
                         :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']" variant="solo"
                         density="compact"></v-select>
@@ -36,18 +31,14 @@
                 <div class="col-2">
                     <v-text-field append-inner-icon="mdi-magnify" density="compact" label="Search templates"
                         variant="solo" hide-details single-line></v-text-field>
-                    <!-- <input type="search" class="form-control" /> -->
-                    <!-- <v-toolbar class="px-2">
-          <v-text-field v-model="search" density="comfortable" placeholder="Search" prepend-inner-icon="mdi-magnify"
-            style="max-width: 300px" variant="solo" clearable hide-details></v-text-field>
-        </v-toolbar> -->
+                  
                 </div>
             </div>
             <v-data-table :headers="headers" :items="desserts" item-value="name" select-strategy="single"
                 show-select></v-data-table>
         
         </v-card>
-        <input type=" file"/>
+        <input class=" accordion-button" type=" file"/>
     </div>
 </template>
 <script>

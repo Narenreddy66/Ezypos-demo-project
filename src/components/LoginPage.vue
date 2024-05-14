@@ -46,6 +46,7 @@ import axiosInstance from "../shared/interceptors";
 import * as yup from "yup";
 
 import { useRouter } from "vue-router";
+import  { ApiUrls } from "@/shared/apiUrls";
 const router = useRouter();
 
 const schema = yup.object({
@@ -55,10 +56,11 @@ const schema = yup.object({
 
 function submitForm(values) {
   axiosInstance
-    .post("http://192.168.1.248:8000/api/method/login", values)
+    .post(ApiUrls.login, values)
     .then((res) => {
       console.log(res);
       localStorage.setItem("user", JSON.stringify(values));
+    
       toast.success("Login Successful", {
               position: "top-right",
             });
@@ -66,7 +68,9 @@ function submitForm(values) {
               router.push({  name: "FirstPage"});
             }, 1000);
      
-    });
+    }).catch((error)=>{
+      console.error(error.message);
+    })
 
   // if (response) {
   //     this.$router.push({ name: 'InterceptorsPage' });

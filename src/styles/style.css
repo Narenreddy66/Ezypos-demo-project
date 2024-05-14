@@ -12,11 +12,6 @@
   color: white !important;
 }
 
-* {
-  background-color: var(--background);
-  margin: 0;
-}
-
 .bg-color1 {
   background-color: lightblue;
   height: 100vh;
@@ -62,4 +57,15 @@ th {
 
 .navbar {
   background-color: var(--thcolor) !important;
+}
+
+.page-item.active .page-link {
+  z-index: 3 !important;
+  color: #fff !important;
+  background-color: var(--activebtncolor1) !important;
+  border-color: var(--activebtncolor1) !important;
+}
+
+.page-item {
+  color: black;
 }/*# sourceMappingURL=style.css.map */
